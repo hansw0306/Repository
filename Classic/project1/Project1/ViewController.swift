@@ -26,6 +26,7 @@ class ViewController: UITableViewController {
 		let items = try! fm.contentsOfDirectory(atPath: path)
 
 		for item in items {
+            //Stirng item에 nssl이 있으면 true;
 			if item.hasPrefix("nssl") {
 				pictures.append(item)
 			}

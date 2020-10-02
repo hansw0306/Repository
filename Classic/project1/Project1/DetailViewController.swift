@@ -22,6 +22,8 @@ class DetailViewController: UIViewController {
             // Fallback on earlier versions
         }
 
+        //여기가 String으로 된 이미지를 UIImage로 변경하여 imageView객체에 넣는 작업을 하는곳이다.
+        //이름만으로 이미지객체로 찾아오는게 신기하네.. ㅋㅋㅋ
 		if let imageToLoad = selectedImage {
 			imageView.image  = UIImage(named: imageToLoad)
 		}
